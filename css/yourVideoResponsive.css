@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1420px) {
+    .catalog__list {
+        --col: 3;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .catalog__list {
+        --col: 2;
+    }
+    .catalog__action_btn {
+        display: none;
+    }
+    .catalog__action_cb {
+        display: block;
+    }
+    .catalog__views {
+        display: none;
+    }
+    .games__item {
+        flex-direction: column;
+    }
+    .games__preview {
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+        object-fit: contain;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+    .games__pic {
+        width: 100%;
+    }
+    .games__details {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .games__details .games__actions {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .catalog__list {
+        --col: 1;
+    }
+    .catalog__sidebar {
+        --spacing: 32px;
+    }
+    .upload:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .upload__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        position: relative;
+    }
+    .upload__col {
+    }
+    .upload__col:nth-child(2) {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .upload__wrap {
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: none;
+    }
+    .page.toggle .upload__wrap {
+        border: none;
+        border-radius: 16px;
+    }
+    .upload__head{
+        margin-bottom: 54px;
+        margin-left: 10px;
+    }
+    .upload__info {
+        display: none;
+    }
+    .upload__btns {
+        width: 100%;
+    }
+    .upload__btn {
+        width: 100%;
+    }
+    .upload__text {
+        display: none;
+    }
+    .upload__note {
+        display: none;
+    }
+    .upload__line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .catalog__sidebar {
+        flex-direction: column;
+        margin: 0;
+    }
+    .catalog__sidebar .widget {
+        width: 100%;
+        margin: 0;
+    }
+    .catalog__sidebar .widget:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .catalog__title {
+        margin-bottom: 20px;
+    }
+    .catalog__filter {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .catalog__box:not(:last-child) {
+        margin-right: unset;
+        margin-bottom: 10px;
+    }
+    .catalog__tags {
+        display: flex;
+        flex-direction: column;
+    }
+}

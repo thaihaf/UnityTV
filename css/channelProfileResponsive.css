@@ -1,0 +1,173 @@
+@media only screen and (max-width: 1360px) {
+    .catalog__list {
+        --col: 3;
+    }
+    .playlists__bottom {
+        --colum: 4;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .author {
+        display: block;
+    }
+    .author__actions {
+        margin-left: calc(124px + 32px);
+        margin-top: 15px;
+    }
+    .playlists__bottom {
+        --colum: 3;
+    }
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+    .catalog__list {
+        --col: 2;
+    }
+    .author {
+        padding: 24px;
+        margin-bottom: 32px;
+    }
+    .author__name {
+        font-size: 24px;
+    }
+    .author__name.confirm::after {
+        width: 20px;
+        height: 20px;
+    }
+    .author__ava.active::before {
+        width: 18px;
+        height: 18px;
+    }
+    .author__parameter {
+        font-size: 13px;
+    }
+    .author__ava {
+        width: 66px;
+        height: 66px;
+        margin-right: 16px;
+        border-width: 3px;
+        box-shadow: 0 0 0 2px #0049c6;
+    }
+    .author__actions {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .author__action.button {
+        height: 50px;
+    }
+    .catalog__nav {
+        margin-bottom: 24px;
+    }
+    .catalog__link {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+    .catalog__tags {
+        display: none;
+    }
+    .catalog__field {
+        display: block;
+        width: 100%;
+    }
+    .catalog__field .field__select {
+        display: block;
+    }
+    .catalog__filter {
+        display: flex;
+        gap: 16px;
+    }
+    .following__name {
+        font-size: 13px;
+    }
+    .following__views {
+        font-size: 11px;
+    }
+    .playlists__title, .field__title {
+        font-size: 14px;
+    }
+    .catalog__item_about {
+        grid-template-columns: 5fr 2.5r;
+    }
+    .author__action {
+        min-width: 0;
+    }
+    .author__action_text {
+        display: none;
+    }
+    .author__action_icon {
+        display: block
+    }
+    .author {
+        display: flex;
+    }
+    .author__actions {
+        margin-top: 0;
+    }
+    .followings__bottom {
+        margin: 24px 0 0 0;
+    }
+    .following__ar {
+        display: none;
+    }
+    .followings__bottom {
+        overflow: auto;
+        grid-auto-columns: calc(100% / 4.5);
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+    }
+    .followings__bottom .following {
+        scroll-snap-align: start;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .playlists__bottom {
+        --colum: 2;
+    }
+    .catalog__item_about {
+        gap: 70px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .followings__bottom {
+        grid-auto-columns: calc(100% / 3.5);
+    }
+    .author {
+        display: block;
+    }
+    .author__actions {
+        margin-top: 15px;
+        margin-left: calc(66px + 16px);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .catalog__list {
+        --col: 1;
+    }
+    .catalog__filter {
+        display: block;
+    }
+    .catalog__field:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .author__actions i {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .catalog__link {
+        padding: 10px 10px;
+    }
+    .playlists__bottom {
+        --colum: 1;
+    }
+    .author__name {
+        font-size: 22px;
+    }
+}
